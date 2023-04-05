@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+.DS_Store
+
+# Production
+/build
+
+# Package Manager
+yarn.lock
+
+# Linting
+.eslintcache
