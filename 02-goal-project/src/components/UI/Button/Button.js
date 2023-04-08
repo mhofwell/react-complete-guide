@@ -1,0 +1,43 @@
+// import styled from "styled-components";
+
+// const Button = styled.button`
+//   font: inherit;
+//   width: 100%;
+//   padding: 0.5rem 1.5rem;
+//   border: 1px solid #8b005d;
+//   color: white;
+//   background: #8b005d;
+//   box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+//   cursor: pointer;
+
+//   @media (min-width: 786px) {
+//     width: auto; 
+//   }
+
+//   &:focus {
+//     outline: none;
+//   }
+
+//   &:hover,
+//   &:active {
+//     background: #ac0e77;
+//     border-color: #ac0e77;
+//     box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
+
+//   }
+// `;
+
+import React from 'react';
+import classes from './Button.module.css';
+
+const Button = props => {
+  return (
+    <button type={props.type} className={classes.button} onClick={props.onClick}>
+      {props.children}
+    </button>
+  );
+};
+
+export default Button;
+
+// styled.<literally any HTML element!>
