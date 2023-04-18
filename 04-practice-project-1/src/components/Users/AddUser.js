@@ -3,13 +3,12 @@ import classes from "./AddUsers.module.css";
 import Card from "../../UI/Card";
 import Button from "../../UI/Button";
 
-const AddUser = ({AddUserHandler}) => {
+const AddUser = ({ AddUserHandler }) => {
   const [un, setUn] = useState("");
   const [age, setAge] = useState("");
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    console.log(un, age);
     if (un.trim().length === 0 || age.trim().length === 0) {
       return;
     }
@@ -24,7 +23,6 @@ const AddUser = ({AddUserHandler}) => {
     };
 
     AddUserHandler(user);
-
 
     setUn("");
     setAge("");

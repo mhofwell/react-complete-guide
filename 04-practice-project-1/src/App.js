@@ -8,7 +8,8 @@ const [users, setUsers] = useState('');
 
   const AddUserHandler = ({user}) => {
    
-  }
+  };
+  
   return (
     <>
       <AddUser AddUserHandler={AddUserHandler}/>
@@ -18,3 +19,4 @@ const [users, setUsers] = useState('');
 }
 
 export default App;
+
