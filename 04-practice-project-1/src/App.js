@@ -4,16 +4,20 @@ import UserList from "./components/Users/UserList";
 
 function App() {
 
-const [users, setUsers] = useState('');
+const [users, setUsers] = useState([]);
 
-  const AddUserHandler = ({user}) => {
-   
+  const AddUserHandler = (user) => { 
+    setUsers((users) => {
+     return [...users, user]
+    }); 
+
+
   };
   
   return (
     <>
       <AddUser AddUserHandler={AddUserHandler}/>
-      <UserList users={[]}/>
+      {users.length > 0 ? <UserList users={users} /> : "" }
     </>
   );
 }
