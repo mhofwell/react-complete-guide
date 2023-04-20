@@ -72,5 +72,6 @@ const AddUser = (props) => {
 
 export default AddUser;
 
-// ref's store real DOM nodes.
+// ref's store real DOM node / element. So we can access x.current.value of the REF. 
 // if you want to only read a value REFs are fine. You can use useState as well, its fine if you need to rely on prev state. 
+// accessing values with a REF are now uncontrolled components. State approach useState is a controlled component.
