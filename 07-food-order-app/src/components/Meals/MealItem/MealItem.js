@@ -1,14 +1,12 @@
 import React from 'react';
 import classes from './MealItem.module.css'
 import MealItemForm from './MealItemForm';
-import Input from '../../UI/Input';
-
 const MealItem = ({meal}) => {
 
     const price = `$${meal.price.toFixed(2)}`;
 
     return(
-        <li className={classes.meal}>
+        <li id={meal.id} className={classes.meal}>
             <div>
                 <h3>{meal.name}</h3>
                 <div className={classes.description}>{meal.description}</div>
