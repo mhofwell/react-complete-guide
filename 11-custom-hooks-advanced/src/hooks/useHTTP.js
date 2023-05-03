@@ -20,6 +20,7 @@ const useHTTP = () => {
         }
 
         const data = await response.json();
+        // takes the .bind value from NewTask as well. 
         transformTasks(data);
 
       } catch (err) {
