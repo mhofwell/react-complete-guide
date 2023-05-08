@@ -14,7 +14,6 @@ function App() {
       {!isAuth && <Auth /> }
       {isAuth && <UserProfile /> }
       <Counter />;
-      <Auth />
     </>
   );
 }
