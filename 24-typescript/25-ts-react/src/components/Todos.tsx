@@ -12,11 +12,11 @@ type Props = {
 };
 
 const Todos: React.FC<Props> = (props) => {
-
   return (
     <ul className={classes.todos}>
       {props.items.map((item) => (
         <Todoitem
+          // bind ensures the right variables are used.
           onRemoveTodo={props.removeTodoHandler.bind(null, item.id)}
           key={item.id}
           text={item.text}
